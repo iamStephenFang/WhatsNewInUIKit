@@ -2,7 +2,7 @@
 
 # WhatsNewInUIKit
 
-Code Examples for WWDC sessions What's new in UIKit from WWDC22.
+Code Examples for WWDC sessions 「What's new in UIKit」 from WWDC22.
 
 # Usage
 

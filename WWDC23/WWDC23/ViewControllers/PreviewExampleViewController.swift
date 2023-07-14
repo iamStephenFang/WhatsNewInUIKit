@@ -15,6 +15,7 @@ final class PreviewExampleViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
         tableView.dataSource = self
+        tableView.delegate = self
         return tableView
     }()
 
@@ -28,7 +29,7 @@ final class PreviewExampleViewController: UIViewController {
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
 }
@@ -40,8 +41,18 @@ extension PreviewExampleViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
-        cell.textLabel?.text = "\(indexPath.item)"
+        
+        var config = cell.defaultContentConfiguration()
+        config.text = "\(indexPath.item)"
+        cell.contentConfiguration = config
+        
         return cell
+    }
+}
+
+extension PreviewExampleViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

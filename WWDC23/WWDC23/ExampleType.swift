@@ -13,6 +13,6 @@ enum ExampleType: String, CaseIterable {
     case animatedSymbolExample = "Animated Symbol Example"
     case pageControlExample = "Page Control Example"
     case contentConfigurationExample = "Content Configuration Example"
-    case lineHeightExample = "Line Height Example"
+    case dynamicLineHeightExample = "Dynamic Line Height Example"
     case localeImageExample = "Locale Image Example"
 }

@@ -10,6 +10,17 @@ import UIKit
 
 final class LocaleImageExampleViewController: UIViewController {
     
+    private let locales = [
+        Locale (languageCode: .arabic),
+        Locale (languageCode: .chinese),
+        Locale (languageCode: .hindi),
+        Locale (languageCode: .hebrew),
+        Locale (languageCode: .thai),
+        Locale (languageCode: .korean),
+        Locale (languageCode: .english),
+        Locale (languageCode: .japanese)
+    ]
+    
     private let imageView: UIImageView = {
         let locale = Locale (languageCode: .chinese)
         
@@ -61,17 +72,6 @@ final class LocaleImageExampleViewController: UIViewController {
     }
     
     @objc private func buttonDidClick(_ sender: UIButton) {
-        let locales = [
-            Locale (languageCode: .arabic),
-            Locale (languageCode: .chinese),
-            Locale (languageCode: .hindi),
-            Locale (languageCode: .hebrew),
-            Locale (languageCode: .thai),
-            Locale (languageCode: .korean),
-            Locale (languageCode: .english),
-            Locale (languageCode: .japanese)
-        ]
-        
         let image = UIImage (
             systemName: "character.textbox",
             withConfiguration: UIImage.SymbolConfiguration(locale: locales.randomElement())

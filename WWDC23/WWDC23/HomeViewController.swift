@@ -43,7 +43,11 @@ extension HomeViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
-        cell.textLabel?.text = types[indexPath.row].rawValue
+        
+        var config = cell.defaultContentConfiguration()
+        config.text = types[indexPath.row].rawValue
+        cell.contentConfiguration = config
+
         return cell
     }
 }
@@ -63,8 +67,8 @@ extension HomeViewController: UITableViewDelegate {
             navigationController?.show(PageControlExampleViewController(), sender: nil)
         case .contentConfigurationExample:
             navigationController?.show(ContentConfigurationExampleViewController(), sender: nil)
-        case .lineHeightExample:
-            navigationController?.show(LineHeightExampleViewController(), sender: nil)
+        case .dynamicLineHeightExample:
+            navigationController?.show(DynamicLineHeightExampleViewController(), sender: nil)
         case .localeImageExample:
             navigationController?.show(LocaleImageExampleViewController(), sender: nil)
         }
