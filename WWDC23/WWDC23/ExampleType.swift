@@ -11,7 +11,7 @@ enum ExampleType: String, CaseIterable {
     case previewExample = "Preview Example"
     case liftCycleExample = "Lift Cycle Example"
     case animatedSymbolExample = "Animated Symbol Example"
-    case pageControlExample = "Page Control Example"
+    case timerPageControlExample = "Timer Page Control Example"
     case contentConfigurationExample = "Content Configuration Example"
     case dynamicLineHeightExample = "Dynamic Line Height Example"
     case localeImageExample = "Locale Image Example"

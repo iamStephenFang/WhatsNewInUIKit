@@ -63,8 +63,8 @@ extension HomeViewController: UITableViewDelegate {
             navigationController?.show(LifeCycleExampleViewController(), sender: nil)
         case .animatedSymbolExample:
             navigationController?.show(AnimatedSymbolExampleViewController(), sender: nil)
-        case .pageControlExample:
-            navigationController?.show(PageControlExampleViewController(), sender: nil)
+        case .timerPageControlExample:
+            navigationController?.show(TimerPageControlExampleViewController(), sender: nil)
         case .contentConfigurationExample:
             navigationController?.show(ContentConfigurationExampleViewController(), sender: nil)
         case .dynamicLineHeightExample:
