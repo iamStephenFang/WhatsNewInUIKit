@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D09938F2A6021A3004B6B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09938E2A6021A3004B6B64 /* AppDelegate.swift */; };
 		4D0993912A6021A3004B6B64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993902A6021A3004B6B64 /* SceneDelegate.swift */; };
-		4D0993932A6021A3004B6B64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993922A6021A3004B6B64 /* HomeViewController.swift */; };
+		4D0993932A6021A3004B6B64 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993922A6021A3004B6B64 /* ExampleViewController.swift */; };
 		4D0993982A6021A9004B6B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0993972A6021A9004B6B64 /* Assets.xcassets */; };
 		4D09939B2A6021A9004B6B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0993992A6021A9004B6B64 /* LaunchScreen.storyboard */; };
 		4D0993A42A60233C004B6B64 /* ExampleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993A32A60233C004B6B64 /* ExampleType.swift */; };
@@ -20,13 +20,14 @@
 		4D0993AF2A602694004B6B64 /* ContentConfigurationExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993AE2A602694004B6B64 /* ContentConfigurationExampleViewController.swift */; };
 		4D0993B12A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993B02A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift */; };
 		4D0993B32A60270C004B6B64 /* LocaleImageExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993B22A60270C004B6B64 /* LocaleImageExampleViewController.swift */; };
+		4D0993BE2A613C20004B6B64 /* DynamicLineHeightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993BD2A613C20004B6B64 /* DynamicLineHeightData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D09938B2A6021A3004B6B64 /* WWDC23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D09938E2A6021A3004B6B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0993902A6021A3004B6B64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D0993922A6021A3004B6B64 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4D0993922A6021A3004B6B64 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		4D0993972A6021A9004B6B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D09939A2A6021A9004B6B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D09939C2A6021A9004B6B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		4D0993AE2A602694004B6B64 /* ContentConfigurationExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentConfigurationExampleViewController.swift; sourceTree = "<group>"; };
 		4D0993B02A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLineHeightExampleViewController.swift; sourceTree = "<group>"; };
 		4D0993B22A60270C004B6B64 /* LocaleImageExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleImageExampleViewController.swift; sourceTree = "<group>"; };
+		4D0993BD2A613C20004B6B64 /* DynamicLineHeightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLineHeightData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +72,11 @@
 		4D09938D2A6021A3004B6B64 /* WWDC23 */ = {
 			isa = PBXGroup;
 			children = (
-				4D0993A52A602547004B6B64 /* ViewControllers */,
+				4D0993B42A613B9B004B6B64 /* Examples */,
 				4D0993A32A60233C004B6B64 /* ExampleType.swift */,
 				4D09938E2A6021A3004B6B64 /* AppDelegate.swift */,
 				4D0993902A6021A3004B6B64 /* SceneDelegate.swift */,
-				4D0993922A6021A3004B6B64 /* HomeViewController.swift */,
+				4D0993922A6021A3004B6B64 /* ExampleViewController.swift */,
 				4D0993972A6021A9004B6B64 /* Assets.xcassets */,
 				4D0993992A6021A9004B6B64 /* LaunchScreen.storyboard */,
 				4D09939C2A6021A9004B6B64 /* Info.plist */,
@@ -82,18 +84,75 @@
 			path = WWDC23;
 			sourceTree = "<group>";
 		};
-		4D0993A52A602547004B6B64 /* ViewControllers */ = {
+		4D0993B42A613B9B004B6B64 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				4D0993C02A613C51004B6B64 /* Content Configuration */,
+				4D0993BF2A613C46004B6B64 /* Locale Image */,
+				4D0993B92A613BF2004B6B64 /* Dynamic Line Height */,
+				4D0993B82A613BE3004B6B64 /* Life Cycle */,
+				4D0993B72A613BBF004B6B64 /* Timer Page Control */,
+				4D0993B62A613BAB004B6B64 /* Animated Symbol */,
+				4D0993B52A613BA2004B6B64 /* Preview */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		4D0993B52A613BA2004B6B64 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
 				4D0993A62A6025F2004B6B64 /* PreviewExampleViewController.swift */,
-				4D0993A82A60261E004B6B64 /* LifeCycleExampleViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		4D0993B62A613BAB004B6B64 /* Animated Symbol */ = {
+			isa = PBXGroup;
+			children = (
 				4D0993AA2A60264A004B6B64 /* AnimatedSymbolExampleViewController.swift */,
+			);
+			path = "Animated Symbol";
+			sourceTree = "<group>";
+		};
+		4D0993B72A613BBF004B6B64 /* Timer Page Control */ = {
+			isa = PBXGroup;
+			children = (
 				4D0993AC2A60267F004B6B64 /* TimerPageControlExampleViewController.swift */,
-				4D0993AE2A602694004B6B64 /* ContentConfigurationExampleViewController.swift */,
+			);
+			path = "Timer Page Control";
+			sourceTree = "<group>";
+		};
+		4D0993B82A613BE3004B6B64 /* Life Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				4D0993A82A60261E004B6B64 /* LifeCycleExampleViewController.swift */,
+			);
+			path = "Life Cycle";
+			sourceTree = "<group>";
+		};
+		4D0993B92A613BF2004B6B64 /* Dynamic Line Height */ = {
+			isa = PBXGroup;
+			children = (
 				4D0993B02A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift */,
+				4D0993BD2A613C20004B6B64 /* DynamicLineHeightData.swift */,
+			);
+			path = "Dynamic Line Height";
+			sourceTree = "<group>";
+		};
+		4D0993BF2A613C46004B6B64 /* Locale Image */ = {
+			isa = PBXGroup;
+			children = (
 				4D0993B22A60270C004B6B64 /* LocaleImageExampleViewController.swift */,
 			);
-			path = ViewControllers;
+			path = "Locale Image";
+			sourceTree = "<group>";
+		};
+		4D0993C02A613C51004B6B64 /* Content Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4D0993AE2A602694004B6B64 /* ContentConfigurationExampleViewController.swift */,
+			);
+			path = "Content Configuration";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +227,8 @@
 			files = (
 				4D0993AD2A60267F004B6B64 /* TimerPageControlExampleViewController.swift in Sources */,
 				4D0993B32A60270C004B6B64 /* LocaleImageExampleViewController.swift in Sources */,
-				4D0993932A6021A3004B6B64 /* HomeViewController.swift in Sources */,
+				4D0993BE2A613C20004B6B64 /* DynamicLineHeightData.swift in Sources */,
+				4D0993932A6021A3004B6B64 /* ExampleViewController.swift in Sources */,
 				4D09938F2A6021A3004B6B64 /* AppDelegate.swift in Sources */,
 				4D0993AF2A602694004B6B64 /* ContentConfigurationExampleViewController.swift in Sources */,
 				4D0993A92A60261E004B6B64 /* LifeCycleExampleViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ExampleViewController.swift
 //  WWDC23
 //
 //  Created by StephenFang on 2023/7/13.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ExampleViewController: UIViewController {
     
     var types: [ExampleType] {
         ExampleType.allCases
@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UITableViewDataSource {
+extension ExampleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         types.count
     }
@@ -52,7 +52,7 @@ extension HomeViewController: UITableViewDataSource {
     }
 }
 
-extension HomeViewController: UITableViewDelegate {
+extension ExampleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 

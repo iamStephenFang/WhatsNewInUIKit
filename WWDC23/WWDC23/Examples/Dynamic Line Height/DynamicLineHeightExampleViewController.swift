@@ -7,21 +7,16 @@
 
 import UIKit
 
-struct ContentData {
-    let title: String
-    let description: String
-}
-
 
 final class DynamicLineHeightExampleViewController: UIViewController {
     
-    private let contentDataItems: [ContentData] = [
-        ContentData(title: "မြန်မာ", description: "Burmese" ),
-        ContentData(title: "中文", description: "Chinese" ),
-        ContentData(title: "English", description: "English" ),
-        ContentData(title: "日本語", description: "Japanese" ),
-        ContentData(title: "한국인", description: "Korean" ),
-        ContentData(title: "แบบไทย", description: "Thai" )
+    private let contentDataItems: [DynamicLineHeightData] = [
+        DynamicLineHeightData(title: "မြန်မာ", description: "Burmese" ),
+        DynamicLineHeightData(title: "中文", description: "Chinese" ),
+        DynamicLineHeightData(title: "English", description: "English" ),
+        DynamicLineHeightData(title: "日本語", description: "Japanese" ),
+        DynamicLineHeightData(title: "한국인", description: "Korean" ),
+        DynamicLineHeightData(title: "แบบไทย", description: "Thai" )
     ]
     
     private lazy var tableView: UITableView = {
