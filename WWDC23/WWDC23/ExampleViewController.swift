@@ -74,6 +74,8 @@ extension ExampleViewController: UITableViewDelegate {
             navigationController?.show(DynamicLineHeightExampleViewController(), sender: nil)
         case .localeImageExample:
             navigationController?.show(LocaleImageExampleViewController(), sender: nil)
+        case .paletteMenus:
+            navigationController?.show(PaletteMenusExampleViewController(), sender: nil)
         }
         navigationController?.viewControllers.last?.title = types[indexPath.row].rawValue
     }

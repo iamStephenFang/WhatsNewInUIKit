@@ -15,4 +15,5 @@ enum ExampleType: String, CaseIterable {
     case contentConfigurationExample = "Content Configuration Example"
     case dynamicLineHeightExample = "Dynamic Line Height Example"
     case localeImageExample = "Locale Image Example"
+    case paletteMenus = "Palette Menus Example"
 }

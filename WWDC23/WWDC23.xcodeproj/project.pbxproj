@@ -21,6 +21,7 @@
 		4D0993B12A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993B02A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift */; };
 		4D0993B32A60270C004B6B64 /* LocaleImageExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993B22A60270C004B6B64 /* LocaleImageExampleViewController.swift */; };
 		4D0993BE2A613C20004B6B64 /* DynamicLineHeightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993BD2A613C20004B6B64 /* DynamicLineHeightData.swift */; };
+		4D5127AE2A63F09B0020A7BB /* PaletteMenusExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5127AD2A63F09B0020A7BB /* PaletteMenusExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4D0993B02A6026E8004B6B64 /* DynamicLineHeightExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLineHeightExampleViewController.swift; sourceTree = "<group>"; };
 		4D0993B22A60270C004B6B64 /* LocaleImageExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleImageExampleViewController.swift; sourceTree = "<group>"; };
 		4D0993BD2A613C20004B6B64 /* DynamicLineHeightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLineHeightData.swift; sourceTree = "<group>"; };
+		4D5127AD2A63F09B0020A7BB /* PaletteMenusExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteMenusExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		4D0993B42A613B9B004B6B64 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				4D5127AC2A63F07B0020A7BB /* Palette Menus */,
 				4D0993C02A613C51004B6B64 /* Content Configuration */,
 				4D0993BF2A613C46004B6B64 /* Locale Image */,
 				4D0993B92A613BF2004B6B64 /* Dynamic Line Height */,
@@ -153,6 +156,14 @@
 				4D0993AE2A602694004B6B64 /* ContentConfigurationExampleViewController.swift */,
 			);
 			path = "Content Configuration";
+			sourceTree = "<group>";
+		};
+		4D5127AC2A63F07B0020A7BB /* Palette Menus */ = {
+			isa = PBXGroup;
+			children = (
+				4D5127AD2A63F09B0020A7BB /* PaletteMenusExampleViewController.swift */,
+			);
+			path = "Palette Menus";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5127AE2A63F09B0020A7BB /* PaletteMenusExampleViewController.swift in Sources */,
 				4D0993AD2A60267F004B6B64 /* TimerPageControlExampleViewController.swift in Sources */,
 				4D0993B32A60270C004B6B64 /* LocaleImageExampleViewController.swift in Sources */,
 				4D0993BE2A613C20004B6B64 /* DynamicLineHeightData.swift in Sources */,
