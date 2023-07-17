@@ -60,22 +60,22 @@ extension ExampleViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
 
         switch types[indexPath.row] {
-        case .previewExample:
-            navigationController?.show(PreviewExampleViewController(), sender: nil)
-        case .liftCycleExample:
-            navigationController?.show(LifeCycleExampleViewController(), sender: nil)
         case .animatedSymbolExample:
             navigationController?.show(AnimatedSymbolExampleViewController(), sender: nil)
-        case .timerPageControlExample:
-            navigationController?.show(TimerPageControlExampleViewController(), sender: nil)
         case .contentConfigurationExample:
             navigationController?.show(ContentConfigurationExampleViewController(), sender: nil)
         case .dynamicLineHeightExample:
             navigationController?.show(DynamicLineHeightExampleViewController(), sender: nil)
+        case .liftCycleExample:
+            navigationController?.show(LifeCycleExampleViewController(), sender: nil)
         case .localeImageExample:
             navigationController?.show(LocaleImageExampleViewController(), sender: nil)
         case .paletteMenus:
             navigationController?.show(PaletteMenusExampleViewController(), sender: nil)
+        case .previewExample:
+            navigationController?.show(PreviewExampleViewController(), sender: nil)
+        case .timerPageControlExample:
+            navigationController?.show(TimerPageControlExampleViewController(), sender: nil)
         }
         navigationController?.viewControllers.last?.title = types[indexPath.row].rawValue
     }
