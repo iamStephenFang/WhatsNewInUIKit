@@ -60,7 +60,25 @@ final class AnimatedSymbolExampleViewController: UIViewController {
     }
     
     @objc private func buttonDidClick(_ sender: UIButton) {
+        /*
+         
+        // Bonuce Effect
         imageView.addSymbolEffect(.bounce)
+        
+        // Pulse Effect
+        imageView.addSymbolEffect(.pulse)
+        
+        // Scale Effect
+        imageView.addSymbolEffect(.scale)
+        
+        // VariableColor Effect
+        imageView.addSymbolEffect(.variableColor.iterative)
+        imageView.removeSymbolEffect(ofType:.variableColor)
+         
+        */
+        
+        // Image Transition
+        imageView.setSymbolImage(UIImage(systemName: "swift")!, contentTransition: .replace.offUp)
         print("Animated: Bounce Effect")
     }
 }

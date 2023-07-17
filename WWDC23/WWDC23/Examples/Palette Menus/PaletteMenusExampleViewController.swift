@@ -8,7 +8,17 @@
 import UIKit
 
 
-class PaletteMenusExampleViewController: UIViewController {
+final class PaletteMenusExampleViewController: UIViewController {
+    
+    private let colors: [UIColor] = [
+        .red,
+        .orange,
+        .yellow,
+        .green,
+        .cyan,
+        .blue,
+        .purple
+    ]
     
     private lazy var paletteButton: UIButton = {
         var iconConfig = UIImage.SymbolConfiguration(font: UIFont.systemFont(ofSize: 40))
@@ -20,29 +30,12 @@ class PaletteMenusExampleViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         
         // .displayAsPalette
-        button.menu = UIMenu(options:[.displayAsPalette], children: [
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.red, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.red)
-            }),
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.orange, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.orange)
-            }),
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.yellow, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.yellow)
-            }),
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.green, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.green)
-            }),
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.cyan, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.cyan)
-            }),
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.blue, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.blue)
-            }),
-            UIAction(image: UIImage(systemName: "circle.fill")?.withTintColor(.purple, renderingMode: .alwaysOriginal), handler: {[weak self] _ in
-                self?.imageView.image = self?.imageView.image?.withTintColor(.purple)
-            })
-        ])
+        button.menu = UIMenu(options:[.displayAsPalette], children: colors.map { color in
+            let image = UIImage(systemName: "circle.fill")?.withTintColor(color, renderingMode: .alwaysOriginal)
+            return UIAction(image: image) { [weak self] _ in
+                self?.imageView.image = self?.imageView.image?.withTintColor(color)
+            }
+          })
         button.showsMenuAsPrimaryAction = true
         return button
     }()
