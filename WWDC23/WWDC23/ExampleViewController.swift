@@ -66,6 +66,8 @@ extension ExampleViewController: UITableViewDelegate {
             navigationController?.show(ContentConfigurationExampleViewController(), sender: nil)
         case .dynamicLineHeightExample:
             navigationController?.show(DynamicLineHeightExampleViewController(), sender: nil)
+        case .dynamicStatusBarExample:
+            navigationController?.show(DynamicStatusBarExampleViewController(), sender: nil)
         case .liftCycleExample:
             navigationController?.show(LifeCycleExampleViewController(), sender: nil)
         case .localeImageExample:

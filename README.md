@@ -14,6 +14,7 @@ Examples of feature reproduction for WWDC "What's New in UIKit" session.
 - Content Configuration
 - Locale Image
 - Dynamic Line Height
+- Dynamic Status Bar
 - Life Cycle
 - Timer Page Control
 - Animated Symbol

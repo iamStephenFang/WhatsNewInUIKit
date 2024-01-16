@@ -18,6 +18,7 @@ WWDC 「WhatsNewInUIKit」 sessions 新特性用例。
 - Content Configuration
 - Locale Image
 - Dynamic Line Height
+- Dynamic Status Bar
 - Life Cycle
 - Timer Page Control
 - Animated Symbol

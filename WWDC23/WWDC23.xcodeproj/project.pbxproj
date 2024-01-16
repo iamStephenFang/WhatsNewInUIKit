@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D14B3A2B56EAEA0002D5B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09D14B392B56EAEA0002D5B4 /* README.md */; };
+		09D14B3D2B56EB390002D5B4 /* DynamicStatusBarExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D14B3C2B56EB390002D5B4 /* DynamicStatusBarExampleViewController.swift */; };
 		4D09938F2A6021A3004B6B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09938E2A6021A3004B6B64 /* AppDelegate.swift */; };
 		4D0993912A6021A3004B6B64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993902A6021A3004B6B64 /* SceneDelegate.swift */; };
 		4D0993932A6021A3004B6B64 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0993922A6021A3004B6B64 /* ExampleViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D14B392B56EAEA0002D5B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		09D14B3C2B56EB390002D5B4 /* DynamicStatusBarExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStatusBarExampleViewController.swift; sourceTree = "<group>"; };
 		4D09938B2A6021A3004B6B64 /* WWDC23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D09938E2A6021A3004B6B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0993902A6021A3004B6B64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D14B3B2B56EB230002D5B4 /* Dynamic Status Bar */ = {
+			isa = PBXGroup;
+			children = (
+				09D14B3C2B56EB390002D5B4 /* DynamicStatusBarExampleViewController.swift */,
+			);
+			path = "Dynamic Status Bar";
+			sourceTree = "<group>";
+		};
 		4D0993822A6021A3004B6B64 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 				4D0993972A6021A9004B6B64 /* Assets.xcassets */,
 				4D0993992A6021A9004B6B64 /* LaunchScreen.storyboard */,
 				4D09939C2A6021A9004B6B64 /* Info.plist */,
+				09D14B392B56EAEA0002D5B4 /* README.md */,
 			);
 			path = WWDC23;
 			sourceTree = "<group>";
@@ -89,6 +102,7 @@
 		4D0993B42A613B9B004B6B64 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				09D14B3B2B56EB230002D5B4 /* Dynamic Status Bar */,
 				4D5127AC2A63F07B0020A7BB /* Palette Menus */,
 				4D0993C02A613C51004B6B64 /* Content Configuration */,
 				4D0993BF2A613C46004B6B64 /* Locale Image */,
@@ -224,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D14B3A2B56EAEA0002D5B4 /* README.md in Resources */,
 				4D09939B2A6021A9004B6B64 /* LaunchScreen.storyboard in Resources */,
 				4D0993982A6021A9004B6B64 /* Assets.xcassets in Resources */,
 			);
@@ -249,6 +264,7 @@
 				4D0993A72A6025F2004B6B64 /* PreviewExampleViewController.swift in Sources */,
 				4D0993912A6021A3004B6B64 /* SceneDelegate.swift in Sources */,
 				4D0993AB2A60264A004B6B64 /* AnimatedSymbolExampleViewController.swift in Sources */,
+				09D14B3D2B56EB390002D5B4 /* DynamicStatusBarExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

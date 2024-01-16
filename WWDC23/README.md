@@ -11,6 +11,7 @@ Contains the following code examples.
 - Content Configuration
 - Locale Image
 - Dynamic Line Height
+- Dynamic Status Bar
 - Life Cycle
 - Timer Page Control
 - Animated Symbol
